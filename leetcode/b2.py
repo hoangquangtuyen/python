@@ -12,7 +12,7 @@ class Solution:
         total= 0 
 
         for i in range(len(s)):
-            if i < len(s) - 1 and roman_numerals[s[i]] < roman_numerals[s[i+1]]:
+            if i < len(s) and roman_numerals[s[i]] < roman_numerals[s[i+1]]:
                 total -= roman_numerals[s[i]]
             else:
                 total += roman_numerals[s[i]]
